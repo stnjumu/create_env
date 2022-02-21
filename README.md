@@ -51,10 +51,14 @@ dependencies:
 ~~~
 
 中嵌套使用了pip安装
+
+~~~anaconda
   - dominate==2.4.0
   - torchvision==0.5.0
   - Pillow==6.1.0
   - visdom==0.1.8
+~~~
+
 注意pytorch+Pillow有些坑，最好这样安装。。。
 
 ## conda或pip安装太慢怎么办？
