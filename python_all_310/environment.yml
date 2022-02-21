@@ -1,0 +1,19 @@
+name: python_all_310
+channels:
+- conda-forge
+- pytorch
+- defaults
+dependencies:
+- python=3.10
+- pytorch=1.10.2
+- scipy
+- numpy
+- pandas
+- matplotlib
+- requests
+- pip
+- pip:
+  - dominate==2.4.0
+  - torchvision==0.5.0
+  - Pillow==6.1.0
+  - visdom==0.1.8
