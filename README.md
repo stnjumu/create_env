@@ -15,8 +15,8 @@ pytorch_36 # pytorch python=3.6，pytorch稳定环境，pytorch框架推荐使�
 
 ~~~anaconda
 conda env create -f environment.yml # 由.yml文件创建环境
-# 以下4句未测试使用过，https://qastack.cn/programming/42352841/how-to-update-an-existing-conda-environment-with-a-yml-file
-conda env export | grep -v "^prefix: " > environment.yml # 导出环境至.yml文件
+conda env export | grep -v "^prefix: " > environment.yml # 导出环境至.yml文件，但此命令导出的yml文件中包非常多，依赖的包都在
+# 以下3句未测试使用过，https://qastack.cn/programming/42352841/how-to-update-an-existing-conda-environment-with-a-yml-file
 conda env update --file local.yml # 添加某些包而改动配置文件后更新环境，需先激活环境
 conda env update --name myenv --file local.yml # 同上，但无需激活环境
 conda env update -f local.yml --prune # 改动配置文件后更新环境，--prune标志移除这个local.yml中不存在的包

@@ -1,0 +1,6 @@
+channels:
+- pytorch
+- defaults
+dependencies:
+- pip:
+  gpustat
