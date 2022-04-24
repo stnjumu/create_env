@@ -106,3 +106,11 @@ show_channel_urls: true
 # For more information about this file see:
 # https://conda.io/docs/user-guide/configuration/use-condarc.html
 ~~~
+
+## 注意事项
+
+### Windows安装
+
+windows下如果使用Anaconda Prompt中进入conda环境中使用pip安装包，会错误地安装在base环境中，请使用vscode地powershell终端进入conda环境再使用pip安装，会直接安装到该conda环境中。
+
+另外，我的PC使用pip需要关闭代理，笔记本使用pip却需要打开代理，奇怪。
