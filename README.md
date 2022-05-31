@@ -7,7 +7,8 @@ python_all_310 # python=3.10 常用环境，尽可能安装所有可能用到的
 pytorch_36 # pytorch python=3.6，pytorch稳定环境，pytorch框架推荐使用。
 ~~~
 
-命名规则：全小写，使用下划线分隔，数字表示python版本，省略.符号
+命名规则：全小写，使用下划线分隔，数字表示python版本，.符号可省略
+  但多个复杂的版本号时不推荐省略，如：mmdet
 
 ## 使用方法
 
@@ -26,6 +27,9 @@ pip install -i requirements.txt
 
 一键部署环境。
 
+注意：多个库版本要求的项目不适合一键部署环境，
+例如：在pytorch, cudatoolkit, torchvision等版本的对应上，这个推荐按照pytorch官网安装
+例如：mmdet, mmcv, CUDA, pytorch四者版本都需对应，推荐按照ObjectDetection/mmdet/下步骤安装。
 ## 解析
 
 例如：
